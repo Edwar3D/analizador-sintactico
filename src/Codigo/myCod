@@ -1,0 +1,36 @@
+class#ejemplo#:#{
+function#miFuncion#{
+print#"hola desde mi funcion"#
+}
+function#miFuncion2#x#:#int#{
+if#x#<#10#{
+print#"x es menor que 10"#
+}
+else#{
+print#"x es mayor que 10"#
+}
+}
+function#miFuncion3#i#:#int#f#:#float#s#:#string#c#:#char#b#:#boolean#{
+return#i#
+}
+main#{
+miFuncion#
+for#x#=#1#x#<#10#x#++#{
+print#x#
+}
+var#fin#=#false#:#boolean#
+var#contador#:#int#
+contador#=#1#
+while#fin#{
+switch#contador#{
+case#1#:#contador#=#10#
+print#"contador es 1"#
+break#
+case#10#:#fin#=#false#
+print#"fin del ciclo"#
+break#
+default#:#print#contador#
+}
+}
+}
+}

@@ -1,0 +1,63 @@
+
+  ERRORES--->
+  case vacio que no valido // corregido
+  estrutura incial de la clase que fallo //corregido
+  (cuando nos e pone el nombre de la clase)
+
+  asigancion de valores
+
+//////////////////////////////////////////////////
+class ejemplo : {
+	function miFuncion(){
+		print("hola desde mi funcion");
+	}
+
+	function miFuncion2(x:int){
+		if(x<10){
+			print("x es menor que 10");
+		}else{
+			print("x es mayor que 10");
+		}
+	}
+
+	function miFuncion3(i: int, f: float, s:string, c:char, b:boolean){
+	return i;
+	}
+
+	main(){
+		print("Inicio");
+		miFuncion();
+		for(x = 1, x<10, x++){
+			print(x);
+		}
+
+		var fin = true: boolean;
+		var contador : int;
+		contador = miFuncion3(1, 20.5, "cadena", 'c', true);
+		while(fin){
+			print("while");
+			switch(contador){
+			case 1:
+				contador=5;
+				print("contador es 1");
+			break;
+			case 10:
+				fin = false;
+				miFuncion2(contador);
+				print("fin del ciclo");
+			break;
+			case 5:
+				contador = 10;
+				miFuncion2(contador);
+				print("contador es 5");
+			break;
+			default:
+				print(contador);
+				fin= false;
+			}
+		}
+
+		print("FIN DE CODIGO");
+
+	}
+}
